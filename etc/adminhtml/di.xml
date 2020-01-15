@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\PageBuilder\Model\ConfigInterface" type="Cadence\PageBuilderDisable\Model\Config" />
+    <!-- Magento's core doesn't use the above interface in all locations -__- so we have to override the model as well -->
+    <!-- @see Magento\PageBuilder\Model\State -->
+    <preference for="Magento\PageBuilder\Model\Config" type="Cadence\PageBuilderDisable\Model\Config" />
+</config>

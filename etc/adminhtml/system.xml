@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="cadence" translate="label" sortOrder="550">
+            <label>Cadence</label>
+        </tab>
+        <section id="page_builder_disable" showInDefault="1" showInWebsite="1" showInStore="1" type="text"
+                 translate="label" sortOrder="10">
+            <label>Page Builder Override</label>
+            <tab>cadence</tab>
+            <resource>Cadence_PageBuilderDisable::menu</resource>
+            <group id="default" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="105">
+                <label>Disabled CMS Components</label>
+                <field id="excluded_blocks" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Disabled CMS Blocks</label>
+                    <comment>Enter a comma (,) delimited list of CMS blocks which should not use the Page Builder editor.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
